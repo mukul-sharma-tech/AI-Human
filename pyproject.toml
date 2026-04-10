@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "ai-human-fresh-graduate"
+version = "1.0.0"
+description = "A Fresh Graduate Management Simulation evaluating HR triage, project balancing, and crisis resolution."
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "openai",
+    "openenv-core",
+]
+
+[project.scripts]
+server = "server.app:main"

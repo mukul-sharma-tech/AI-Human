@@ -1,0 +1,14 @@
+version: "1.0"
+name: "ai-human-fresh-graduate"
+description: "A Fresh Graduate Management Simulation evaluating HR triage, project balancing, and crisis resolution."
+tags: ["openenv", "hr", "management", "triage"]
+entry_point: "server:app"
+observation_space:
+  company_context: string
+  inbox: list
+  team_status: dict
+  project_board: dict
+action_space:
+  action_type: string
+  target_id: string
+  employee_id: string

@@ -1,0 +1,34 @@
+PS E:\Work\Hackathon\Meta\Code> python inference.py
+[START] Task: AI_HUMAN, Env: AI_HUMAN_Triage, Model: nemotron-3-super
+[INFO] Using provider: ollama
+[STEP] 1 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 2 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 3 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 4 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 5 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 6 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 7 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 8 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 9 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 10 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 11 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 12 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 13 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 14 | Reward: 0.17
+[INFO] Using provider: ollama
+[STEP] 15 | Reward: 0.17
+[END] Final Score: 0.17
+PS E:\Work\Hackathon\Meta\Code> 
