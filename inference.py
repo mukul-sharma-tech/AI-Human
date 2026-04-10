@@ -3,13 +3,14 @@ from openai import OpenAI
 from environment import AIHumanEnv, Action
 
 # Mandatory environment variables per competition rules
-API_BASE_URL = os.getenv("API_BASE_URL")
-MODEL_NAME = os.getenv("MODEL_NAME", "nemotron-3-super")
+API_BASE_URL = os.getenv("API_BASE_URL", "https://api-inference.huggingface.co/v1")
+MODEL_NAME = os.getenv("MODEL_NAME", "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF")
+HF_TOKEN = os.getenv("HF_TOKEN")  # No default — must be set in environment
 API_KEY = os.getenv("OPENAI_API_KEY", "")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 
-# Primary client uses competition-supplied env vars
-PRIMARY_CLIENT = OpenAI(base_url=API_BASE_URL, api_key=API_KEY)
+# Primary client uses competition-supplied env vars (HF inference endpoint)
+PRIMARY_CLIENT = OpenAI(base_url=API_BASE_URL, api_key=HF_TOKEN or API_KEY)
 
 # Fallback chain: Ollama -> Groq -> primary (OpenAI)
 PROVIDERS = [
